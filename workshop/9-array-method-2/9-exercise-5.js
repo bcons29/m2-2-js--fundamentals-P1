@@ -12,10 +12,11 @@
 // Returns a new list with all the elements of lst that are length
 // greater than 5
 function keepLong(lst) {
-  // lst is an array of strings
+  let nameDc = lst.filter((b) => b.length > 5);
+  return nameDc;
 }
 
 console.log(
-  'Q5 keepLong()',
-  keepLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
+  "Q5 keepLong()",
+  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );

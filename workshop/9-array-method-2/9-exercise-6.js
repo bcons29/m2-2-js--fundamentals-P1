@@ -14,6 +14,13 @@
 
 function greet(lst) {
   // lst is an array of strings
+  let newLst = [];
+
+  lst.forEach((element) => {
+    newLst.push("Hello " + element);
+  });
+
+  return newLst;
 }
 
-console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
+console.log("Q6 greet()", greet(["David", "Billy", "Lisa", "Jennifer"]));

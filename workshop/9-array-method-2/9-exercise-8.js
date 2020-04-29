@@ -13,13 +13,22 @@
 // Otherwise returns false.
 function allLong(lst) {
   // lst is an array of strings
+  function allLong(lst) {
+    let newLst = lst.filter((element) => element.length >= 5);
+
+    if (newLst.length == lst.length) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
-console.log('Q8 - case 1', allLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q8 - case 1", allLong(["Scott", "Bob", "Ric", "Jim"]));
 // Should be false
 
 console.log(
-  'Q8 - case 2',
-  allLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
+  "Q8 - case 2",
+  allLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
 // Should be true

@@ -15,6 +15,15 @@
 
 function greetLong(lst) {
   // lst is an array of strings
+  let newLst = [];
+
+  lst.forEach((element) => {
+    if (element.length >= 4) {
+      newLst.push("Hello " + element);
+    }
+  });
+
+  return newLst;
 }
 // -------------------------------------------------------------------------
-console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q7 greetLong()", greetLong(["Scott", "Bob", "Ric", "Jim"]));
