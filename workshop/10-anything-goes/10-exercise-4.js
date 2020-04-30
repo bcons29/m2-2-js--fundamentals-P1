@@ -4,8 +4,6 @@
 
 // Hint: consider using .filter(), .indexOf() and .lastIndexOf()
 
-function filterNonUnique(array) {
+function filterNonUnique(array)
 
-}
-
-console.log(filterNonUnique([1,2,3,3,4,5,6,7,7,8]));
+console.log(filterNonUnique([1, 2, 3, 3, 4, 5, 6, 7, 7, 8]));
